@@ -26,4 +26,4 @@ jobs:
       with:
         context: .
         push: false
-        tags: vless-render-proxy:latest
+        tags: vs:latest
