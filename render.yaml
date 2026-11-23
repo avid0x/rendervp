@@ -1,11 +1,11 @@
 services:
   - type: web
-    name: vless-ws-proxy
+    name: vs
     runtime: docker
     plan: free
     region: frankfurt
     envVars:
-      - key: UUID
+      - key: UAID
         generateValue: true
-      - key: WSPATH
-        value: /vless-ws
+      - key: WCPATH
+        value: /vws

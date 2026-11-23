@@ -1,17 +1,14 @@
 <div align="right">
-  <em>💡 100% original ideas &nbsp;•&nbsp; 🤖 100% vibe coding &nbsp;•&nbsp; 🚫 0% nudes</em>
+  <em>💡 100% 𝗼𝗿𝗶𝗴𝗶𝗻𝗮𝗹 𝗶𝗱𝗲𝗮𝘀 &nbsp;•&nbsp; 🤖 100% 𝘃𝗶𝗯𝗲 𝗰𝗼𝗱𝗶𝗻𝗴 &nbsp;•&nbsp; 🚫 0% 𝗻𝘂𝗱𝗲𝘀</em>
   &nbsp;&nbsp;
   <a href="https://github.com/ibrahimali111" title="100% Original Ideas • 100% Vibe Coding • 0% Nudes">
     <img src="https://raw.githubusercontent.com/ibrahimali111/fair-hearts/main/assets/vibe-coded-badge.svg" height="28" alt="Vibe Coded" />
   </a>
 </div>
 
-# VLESS WebSocket Proxy for Render
+# 𝗩𝗟𝗘𝗦𝗦 𝗪𝗲𝗯𝗦𝗼𝗰𝗸𝗲𝘁 𝗣𝗿𝗼𝘅𝘆 𝗳𝗼𝗿 𝗥𝗲𝗻𝗱𝗲𝗿
 
 <p align="center">
-  <a href="https://github.com/ibrahimali111/vless-render-proxy/actions/workflows/docker-build.yml">
-    <img src="https://github.com/ibrahimali111/vless-render-proxy/actions/workflows/docker-build.yml/badge.svg" alt="Docker CI" />
-  </a>
   <a href="https://github.com/ibrahimali111/vless-render-proxy/blob/main/LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT" />
   </a>
@@ -19,141 +16,141 @@
   <img src="https://img.shields.io/badge/platform-Render.com-46E3B7?logo=render&logoColor=white" alt="Render Ready" />
 </p>
 
-A standalone, production-ready VLESS WebSocket proxy server running the official 64-bit [Xray-core](https://github.com/XTLS/Xray-core) inside a lightweight Alpine Linux Docker container, tailored for zero-cost deployment on [Render.com](https://render.com).
+𝗔 𝘀𝘁𝗮𝗻𝗱𝗮𝗹𝗼𝗻𝗲, 𝗽𝗿𝗼𝗱𝘂𝗰𝘁𝗶𝗼𝗻-𝗿𝗲𝗮𝗱𝘆 𝗩𝗟𝗘𝗦𝗦 𝗪𝗲𝗯𝗦𝗼𝗰𝗸𝗲𝘁 𝗽𝗿𝗼𝘅𝘆 𝘀𝗲𝗿𝘃𝗲𝗿 𝗿𝘂𝗻𝗻𝗶𝗻𝗴 𝘁𝗵𝗲 𝗼𝗳𝗳𝗶𝗰𝗶𝗮𝗹 64-𝗯𝗶𝘁 [𝗫𝗿𝗮𝘆-𝗰𝗼𝗿𝗲](https://github.com/XTLS/Xray-core) 𝗶𝗻𝘀𝗶𝗱𝗲 𝗮 𝗹𝗶𝗴𝗵𝘁𝘄𝗲𝗶𝗴𝗵𝘁 𝗔𝗹𝗽𝗶𝗻𝗲 𝗟𝗶𝗻𝘂𝘅 𝗗𝗼𝗰𝗸𝗲𝗿 𝗰𝗼𝗻𝘁𝗮𝗶𝗻𝗲𝗿, 𝘁𝗮𝗶𝗹𝗼𝗿𝗲𝗱 𝗳𝗼𝗿 𝘇𝗲𝗿𝗼-𝗰𝗼𝘀𝘁 𝗱𝗲𝗽𝗹𝗼𝘆𝗺𝗲𝗻𝘁 𝗼𝗻 [𝗥𝗲𝗻𝗱𝗲𝗿.𝗰𝗼𝗺](https://render.com).
 
 ---
 
-## ⚡ 1-Click Deploy to Render
+## ⚡ 1-𝗖𝗹𝗶𝗰𝗸 𝗗𝗲𝗽𝗹𝗼𝘆 𝘁𝗼 𝗥𝗲𝗻𝗱𝗲𝗿
 
-Deploy directly to your Render account with pre-configured settings:
+𝗗𝗲𝗽𝗹𝗼𝘆 𝗱𝗶𝗿𝗲𝗰𝘁𝗹𝘆 𝘁𝗼 𝘆𝗼𝘂𝗿 𝗥𝗲𝗻𝗱𝗲𝗿 𝗮𝗰𝗰𝗼𝘂𝗻𝘁 𝘄𝗶𝘁𝗵 𝗽𝗿𝗲-𝗰𝗼𝗻𝗳𝗶𝗴𝘂𝗿𝗲𝗱 𝘀𝗲𝘁𝘁𝗶𝗻𝗴𝘀:
 
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/ibrahimali111/vless-render-proxy)
-
----
-
-## Features
-
-- **Lightweight & Fast**: Built on Alpine Linux with the latest official release of Xray-core.
-- **WebSocket Transport**: Fully compatible with Cloudflare CDN, reverse proxies, and Render HTTP/WebSocket edge routing.
-- **Render Ready**: Automatically binds to `$PORT` (Render default: `10000`) and serves traffic over Render's automatic TLS on port `443`.
-- **Customizable**: Set your own client `UUID` and WebSocket `WSPATH` using environment variables.
-- **Automated CI**: Built-in GitHub Actions testing workflow.
+[![𝗗𝗲𝗽𝗹𝗼𝘆 𝘁𝗼 𝗥𝗲𝗻𝗱𝗲𝗿](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/ibrahimali111/vless-render-proxy)
 
 ---
 
-## Project Structure
+## 𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀
+
+- **𝗟𝗶𝗴𝗵𝘁𝘄𝗲𝗶𝗴𝗵𝘁 & 𝗙𝗮𝘀𝘁**: 𝗕𝘂𝗶𝗹𝘁 𝗼𝗻 𝗔𝗹𝗽𝗶𝗻𝗲 𝗟𝗶𝗻𝘂𝘅 𝘄𝗶𝘁𝗵 𝘁𝗵𝗲 𝗹𝗮𝘁𝗲𝘀𝘁 𝗼𝗳𝗳𝗶𝗰𝗶𝗮𝗹 𝗿𝗲𝗹𝗲𝗮𝘀𝗲 𝗼𝗳 𝗫𝗿𝗮𝘆-𝗰𝗼𝗿𝗲.
+- **𝗪𝗲𝗯𝗦𝗼𝗰𝗸𝗲𝘁 𝗧𝗿𝗮𝗻𝘀𝗽𝗼𝗿𝘁**: 𝗙𝘂𝗹𝗹𝘆 𝗰𝗼𝗺𝗽𝗮𝘁𝗶𝗯𝗹𝗲 𝘄𝗶𝘁𝗵 𝗖𝗹𝗼𝘂𝗱𝗳𝗹𝗮𝗿𝗲 𝗖𝗗𝗡, 𝗿𝗲𝘃𝗲𝗿𝘀𝗲 𝗽𝗿𝗼𝘅𝗶𝗲𝘀, 𝗮𝗻𝗱 𝗥𝗲𝗻𝗱𝗲𝗿 𝗛𝗧𝗧𝗣/𝗪𝗲𝗯𝗦𝗼𝗰𝗸𝗲𝘁 𝗲𝗱𝗴𝗲 𝗿𝗼𝘂𝘁𝗶𝗻𝗴.
+- **𝗥𝗲𝗻𝗱𝗲𝗿 𝗥𝗲𝗮𝗱𝘆**: 𝗔𝘂𝘁𝗼𝗺𝗮𝘁𝗶𝗰𝗮𝗹𝗹𝘆 𝗯𝗶𝗻𝗱𝘀 𝘁𝗼 `$𝗣𝗢𝗥𝗧` (𝗥𝗲𝗻𝗱𝗲𝗿 𝗱𝗲𝗳𝗮𝘂𝗹𝘁: `10000`) 𝗮𝗻𝗱 𝘀𝗲𝗿𝘃𝗲𝘀 𝘁𝗿𝗮𝗳𝗳𝗶𝗰 𝗼𝘃𝗲𝗿 𝗥𝗲𝗻𝗱𝗲𝗿'𝘀 𝗮𝘂𝘁𝗼𝗺𝗮𝘁𝗶𝗰 𝗧𝗟𝗦 𝗼𝗻 𝗽𝗼𝗿𝘁 `443`.
+- **𝗖𝘂𝘀𝘁𝗼𝗺𝗶𝘇𝗮𝗯𝗹𝗲**: 𝗦𝗲𝘁 𝘆𝗼𝘂𝗿 𝗼𝘄𝗻 𝗰𝗹𝗶𝗲𝗻𝘁 `𝗨𝗨𝗜𝗗` 𝗮𝗻𝗱 𝗪𝗲𝗯𝗦𝗼𝗰𝗸𝗲𝘁 `𝗪𝗦𝗣𝗔𝗧𝗛` 𝘂𝘀𝗶𝗻𝗴 𝗲𝗻𝘃𝗶𝗿𝗼𝗻𝗺𝗲𝗻𝘁 𝘃𝗮𝗿𝗶𝗮𝗯𝗹𝗲𝘀.
+- **𝗔𝘂𝘁𝗼𝗺𝗮𝘁𝗲𝗱 𝗖𝗜**: 𝗕𝘂𝗶𝗹𝘁-𝗶𝗻 𝗚𝗶𝘁𝗛𝘂𝗯 𝗔𝗰𝘁𝗶𝗼𝗻𝘀 𝘁𝗲𝘀𝘁𝗶𝗻𝗴 𝘄𝗼𝗿𝗸𝗳𝗹𝗼𝘄.
+
+---
+
+## 𝗣𝗿𝗼𝗷𝗲𝗰𝘁 𝗦𝘁𝗿𝘂𝗰𝘁𝘂𝗿𝗲
 
 ```
 .
-├── Dockerfile                  # Alpine image with Xray-core and dependencies
-├── entrypoint.sh               # Dynamic config generator and container entrypoint
-├── render.yaml                 # 1-Click Render blueprint configuration
-├── .github/
-│   └── workflows/
-│       └── docker-build.yml    # Continuous Integration Docker build tests
-├── LICENSE                     # MIT Open Source License
-├── .gitignore                  # Standard Git ignore rules
-└── README.md                   # Complete documentation
+├── 𝗗𝗼𝗰𝗸𝗲𝗿𝗳𝗶𝗹𝗲                  # 𝗔𝗹𝗽𝗶𝗻𝗲 𝗶𝗺𝗮𝗴𝗲 𝘄𝗶𝘁𝗵 𝗫𝗿𝗮𝘆-𝗰𝗼𝗿𝗲 𝗮𝗻𝗱 𝗱𝗲𝗽𝗲𝗻𝗱𝗲𝗻𝗰𝗶𝗲𝘀
+├── 𝗲𝗻𝘁𝗿𝘆𝗽𝗼𝗶𝗻𝘁.𝘀𝗵               # 𝗗𝘆𝗻𝗮𝗺𝗶𝗰 𝗰𝗼𝗻𝗳𝗶𝗴 𝗴𝗲𝗻𝗲𝗿𝗮𝘁𝗼𝗿 𝗮𝗻𝗱 𝗰𝗼𝗻𝘁𝗮𝗶𝗻𝗲𝗿 𝗲𝗻𝘁𝗿𝘆𝗽𝗼𝗶𝗻𝘁
+├── 𝗿𝗲𝗻𝗱𝗲𝗿.𝘆𝗮𝗺𝗹                 # 1-𝗖𝗹𝗶𝗰𝗸 𝗥𝗲𝗻𝗱𝗲𝗿 𝗯𝗹𝘂𝗲𝗽𝗿𝗶𝗻𝘁 𝗰𝗼𝗻𝗳𝗶𝗴𝘂𝗿𝗮𝘁𝗶𝗼𝗻
+├── .𝗴𝗶𝘁𝗵𝘂𝗯/
+│   └── 𝘄𝗼𝗿𝗸𝗳𝗹𝗼𝘄𝘀/
+│       └── 𝗱𝗼𝗰𝗸𝗲𝗿-𝗯𝘂𝗶𝗹𝗱.𝘆𝗺𝗹    # 𝗖𝗼𝗻𝘁𝗶𝗻𝘂𝗼𝘂𝘀 𝗜𝗻𝘁𝗲𝗴𝗿𝗮𝘁𝗶𝗼𝗻 𝗗𝗼𝗰𝗸𝗲𝗿 𝗯𝘂𝗶𝗹𝗱 𝘁𝗲𝘀𝘁𝘀
+├── 𝗟𝗜𝗖𝗘𝗡𝗦𝗘                     # 𝗠𝗜𝗧 𝗢𝗽𝗲𝗻 𝗦𝗼𝘂𝗿𝗰𝗲 𝗟𝗶𝗰𝗲𝗻𝘀𝗲
+├── .𝗴𝗶𝘁𝗶𝗴𝗻𝗼𝗿𝗲                  # 𝗦𝘁𝗮𝗻𝗱𝗮𝗿𝗱 𝗚𝗶𝘁 𝗶𝗴𝗻𝗼𝗿𝗲 𝗿𝘂𝗹𝗲𝘀
+└── 𝗥𝗘𝗔𝗗𝗠𝗘.𝗺𝗱                   # 𝗖𝗼𝗺𝗽𝗹𝗲𝘁𝗲 𝗱𝗼𝗰𝘂𝗺𝗲𝗻𝘁𝗮𝘁𝗶𝗼𝗻
 ```
 
 ---
 
-## Manual Deployment on Render.com
+## 𝗠𝗮𝗻𝘂𝗮𝗹 𝗗𝗲𝗽𝗹𝗼𝘆𝗺𝗲𝗻𝘁 𝗼𝗻 𝗥𝗲𝗻𝗱𝗲𝗿.𝗰𝗼𝗺
 
-If you prefer to configure the Web Service manually:
+𝗜𝗳 𝘆𝗼𝘂 𝗽𝗿𝗲𝗳𝗲𝗿 𝘁𝗼 𝗰𝗼𝗻𝗳𝗶𝗴𝘂𝗿𝗲 𝘁𝗵𝗲 𝗪𝗲𝗯 𝗦𝗲𝗿𝘃𝗶𝗰𝗲 𝗺𝗮𝗻𝘂𝗮𝗹𝗹𝘆:
 
-1. **Sign in to Render**:
-   - Go to [dashboard.render.com](https://dashboard.render.com/) and log in with your GitHub account.
-2. **Create a New Web Service**:
-   - In your Render dashboard, click **New +** and select **Web Service**.
-   - Select **Build and deploy from a Git repository**.
-   - Choose `vless-render-proxy`.
-3. **Configure Service Settings**:
-   - **Name**: Choose a unique service name (e.g., `my-vless-service`).
-   - **Region**: Select **Frankfurt (EU Central)** (or your preferred region).
-   - **Branch**: `main`
-   - **Runtime**: Select **Docker**.
-   - **Instance Type**: Select **Free** ($0 / month).
-4. **Configure Environment Variables**:
-   Click **Add Environment Variable**:
+1. **𝗦𝗶𝗴𝗻 𝗶𝗻 𝘁𝗼 𝗥𝗲𝗻𝗱𝗲𝗿**:
+   - 𝗚𝗼 𝘁𝗼 [𝗱𝗮𝘀𝗵𝗯𝗼𝗮𝗿𝗱.𝗿𝗲𝗻𝗱𝗲𝗿.𝗰𝗼𝗺](𝗵𝘁𝘁𝗽𝘀://𝗱𝗮𝘀𝗵𝗯𝗼𝗮𝗿𝗱.𝗿𝗲𝗻𝗱𝗲𝗿.𝗰𝗼𝗺/) 𝗮𝗻𝗱 𝗹𝗼𝗴 𝗶𝗻 𝘄𝗶𝘁𝗵 𝘆𝗼𝘂𝗿 𝗚𝗶𝘁𝗛𝘂𝗯 𝗮𝗰𝗰𝗼𝘂𝗻𝘁.
+2. **𝗖𝗿𝗲𝗮𝘁𝗲 𝗮 𝗡𝗲𝘄 𝗪𝗲𝗯 𝗦𝗲𝗿𝘃𝗶𝗰𝗲**:
+   - 𝗜𝗻 𝘆𝗼𝘂𝗿 𝗥𝗲𝗻𝗱𝗲𝗿 𝗱𝗮𝘀𝗵𝗯𝗼𝗮𝗿𝗱, 𝗰𝗹𝗶𝗰𝗸 **𝗡𝗲𝘄 +** 𝗮𝗻𝗱 𝘀𝗲𝗹𝗲𝗰𝘁 **𝗪𝗲𝗯 𝗦𝗲𝗿𝘃𝗶𝗰𝗲**.
+   - 𝗦𝗲𝗹𝗲𝗰𝘁 **𝗕𝘂𝗶𝗹𝗱 𝗮𝗻𝗱 𝗱𝗲𝗽𝗹𝗼𝘆 𝗳𝗿𝗼𝗺 𝗮 𝗚𝗶𝘁 𝗿𝗲𝗽𝗼𝘀𝗶𝘁𝗼𝗿𝘆**.
+   - 𝗖𝗵𝗼𝗼𝘀𝗲 `vless-render-proxy`.
+3. **𝗖𝗼𝗻𝗳𝗶𝗴𝘂𝗿𝗲 𝗦𝗲𝗿𝘃𝗶𝗰𝗲 𝗦𝗲𝘁𝘁𝗶𝗻𝗴𝘀**:
+   - **𝗡𝗮𝗺𝗲**: 𝗖𝗵𝗼𝗼𝘀𝗲 𝗮 𝘂𝗻𝗶𝗾𝘂𝗲 𝘀𝗲𝗿𝘃𝗶𝗰𝗲 𝗻𝗮𝗺𝗲 (𝗲.𝗴., `my-vless-service`).
+   - **𝗥𝗲𝗴𝗶𝗼𝗻**: 𝗦𝗲𝗹𝗲𝗰𝘁 **𝗙𝗿𝗮𝗻𝗸𝗳𝘂𝗿𝘁 (𝗘𝗨 𝗖𝗲𝗻𝘁𝗿𝗮𝗹)** (𝗼𝗿 𝘆𝗼𝘂𝗿 𝗽𝗿𝗲𝗳𝗲𝗿𝗿𝗲𝗱 𝗿𝗲𝗴𝗶𝗼𝗻).
+   - **𝗕𝗿𝗮𝗻𝗰𝗵**: `main`
+   - **𝗥𝘂𝗻𝘁𝗶𝗺𝗲**: 𝗦𝗲𝗹𝗲𝗰𝘁 **𝗗𝗼𝗰𝗸𝗲𝗿**.
+   - **𝗜𝗻𝘀𝘁𝗮𝗻𝗰𝗲 𝗧𝘆𝗽𝗲**: 𝗦𝗲𝗹𝗲𝗰𝘁 **𝗙𝗿𝗲𝗲** ($0 / 𝗺𝗼𝗻𝘁𝗵).
+4. **𝗖𝗼𝗻𝗳𝗶𝗴𝘂𝗿𝗲 𝗘𝗻𝘃𝗶𝗿𝗼𝗻𝗺𝗲𝗻𝘁 𝗩𝗮𝗿𝗶𝗮𝗯𝗹𝗲𝘀**:
+   𝗖𝗹𝗶𝗰𝗸 **𝗔𝗱𝗱 𝗘𝗻𝘃𝗶𝗿𝗼𝗻𝗺𝗲𝗻𝘁 𝗩𝗮𝗿𝗶𝗮𝗯𝗹𝗲**:
 
-   | Key | Value | Description |
+   | 𝗞𝗲𝘆 | 𝗩𝗮𝗹𝘂𝗲 | 𝗗𝗲𝘀𝗰𝗿𝗶𝗽𝘁𝗶𝗼𝗻 |
    |---|---|---|
-   | `UUID` | `de04add9-5c68-8bab-950c-08cd5320df18` *(or your custom UUID)* | Client authentication ID |
-   | `WSPATH` | `/vless-ws` *(or custom path like `/app-stream`)* | WebSocket route path |
+   | `UAID` | `de04add9-5c68-8bab-950c-08cd5320df18` *(𝗼𝗿 𝘆𝗼𝘂𝗿 𝗰𝘂𝘀𝘁𝗼𝗺 𝗨𝗨𝗜𝗗)* | 𝗖𝗹𝗶𝗲𝗻𝘁 𝗮𝘂𝘁𝗵𝗲𝗻𝘁𝗶𝗰𝗮𝘁𝗶𝗼𝗻 𝗜𝗗 |
+   | `WCPATH` | `/vws` *(𝗼𝗿 𝗰𝘂𝘀𝘁𝗼𝗺 𝗽𝗮𝘁𝗵 𝗹𝗶𝗸𝗲 `/app-stream`)* | 𝗪𝗲𝗯𝗦𝗼𝗰𝗸𝗲𝘁 𝗿𝗼𝘂𝘁𝗲 𝗽𝗮𝘁𝗵 |
 
-5. **Deploy**:
-   - Click **Deploy Web Service**.
-   - When the build finishes, status will turn **Live** and provide your URL (e.g., `https://my-vless-service.onrender.com`).
+5. **𝗗𝗲𝗽𝗹𝗼𝘆**:
+   - 𝗖𝗹𝗶𝗰𝗸 **𝗗𝗲𝗽𝗹𝗼𝘆 𝗪𝗲𝗯 𝗦𝗲𝗿𝘃𝗶𝗰𝗲**.
+   - 𝗪𝗵𝗲𝗻 𝘁𝗵𝗲 𝗯𝘂𝗶𝗹𝗱 𝗳𝗶𝗻𝗶𝘀𝗵𝗲𝘀, 𝘀𝘁𝗮𝘁𝘂𝘀 𝘄𝗶𝗹𝗹 𝘁𝘂𝗿𝗻 **𝗟𝗶𝘃𝗲** 𝗮𝗻𝗱 𝗽𝗿𝗼𝘃𝗶𝗱𝗲 𝘆𝗼𝘂𝗿 𝗨𝗥𝗟 (𝗲.𝗴., `https://my-vless-service.onrender.com`).
 
 ---
 
-## Environment Variables Reference
+## 𝗘𝗻𝘃𝗶𝗿𝗼𝗻𝗺𝗲𝗻𝘁 𝗩𝗮𝗿𝗶𝗮𝗯𝗹𝗲𝘀 𝗥𝗲𝗳𝗲𝗿𝗲𝗻𝗰𝗲
 
-| Variable | Default Value | Required | Description |
+| 𝗩𝗮𝗿𝗶𝗮𝗯𝗹𝗲 | 𝗗𝗲𝗳𝗮𝘂𝗹𝘁 𝗩𝗮𝗹𝘂𝗲 | 𝗥𝗲𝗾𝘂𝗶𝗿𝗲𝗱 | 𝗗𝗲𝘀𝗰𝗿𝗶𝗽𝘁𝗶𝗼𝗻 |
 |---|---|---|---|
-| `UUID` | `de04add9-5c68-8bab-950c-08cd5320df18` | Optional | User identifier for VLESS authentication. |
-| `WSPATH` | `/vless-ws` | Optional | WebSocket path (must start with `/`). |
-| `PORT` | `10000` | Optional | Port inside container (handled automatically by Render). |
+| `UAID` | `de04add9-5c68-8bab-950c-08cd5320df18` | 𝗢𝗽𝘁𝗶𝗼𝗻𝗮𝗹 | 𝗨𝘀𝗲𝗿 𝗶𝗱𝗲𝗻𝘁𝗶𝗳𝗶𝗲𝗿 𝗳𝗼𝗿 𝗩𝗟𝗘𝗦𝗦 𝗮𝘂𝘁𝗵𝗲𝗻𝘁𝗶𝗰𝗮𝘁𝗶𝗼𝗻. |
+| `WCPATH` | `/vws` | 𝗢𝗽𝘁𝗶𝗼𝗻𝗮𝗹 | 𝗪𝗲𝗯𝗦𝗼𝗰𝗸𝗲𝘁 𝗽𝗮𝘁𝗵 (𝗺𝘂𝘀𝘁 𝘀𝘁𝗮𝗿𝘁 𝘄𝗶𝘁𝗵 `/`). |
+| `PORT` | `10000` | 𝗢𝗽𝘁𝗶𝗼𝗻𝗮𝗹 | 𝗣𝗼𝗿𝘁 𝗶𝗻𝘀𝗶𝗱𝗲 𝗰𝗼𝗻𝘁𝗮𝗶𝗻𝗲𝗿 (𝗵𝗮𝗻𝗱𝗹𝗲𝗱 𝗮𝘂𝘁𝗼𝗺𝗮𝘁𝗶𝗰𝗮𝗹𝗹𝘆 𝗯𝘆 𝗥𝗲𝗻𝗱𝗲𝗿). |
 
 ---
 
-## Client Configuration Guide
+## 𝗖𝗹𝗶𝗲𝗻𝘁 𝗖𝗼𝗻𝗳𝗶𝗴𝘂𝗿𝗮𝘁𝗶𝗼𝗻 𝗚𝘂𝗶𝗱𝗲
 
-Render terminates TLS at its edge, so your client connects with **Port 443** and **TLS Enabled**.
+𝗥𝗲𝗻𝗱𝗲𝗿 𝘁𝗲𝗿𝗺𝗶𝗻𝗮𝘁𝗲𝘀 𝗧𝗟𝗦 𝗮𝘁 𝗶𝘁𝘀 𝗲𝗱𝗴𝗲, 𝘀𝗼 𝘆𝗼𝘂𝗿 𝗰𝗹𝗶𝗲𝗻𝘁 𝗰𝗼𝗻𝗻𝗲𝗰𝘁𝘀 𝘄𝗶𝘁𝗵 **𝗣𝗼𝗿𝘁 443** 𝗮𝗻𝗱 **𝗧𝗟𝗦 𝗘𝗻𝗮𝗯𝗹𝗲𝗱**.
 
-### Core Connection Parameters
+### 𝗖𝗼𝗿𝗲 𝗖𝗼𝗻𝗻𝗲𝗰𝘁𝗶𝗼𝗻 𝗣𝗮𝗿𝗮𝗺𝗲𝘁𝗲𝗿𝘀
 
-- **Protocol**: `VLESS`
-- **Address (Server / Host)**: `<your-service-name>.onrender.com`
-- **Port**: `443`
-- **User ID / UUID**: Your configured `UUID`
-- **Encryption**: `none`
-- **Transport / Network**: `ws` (WebSocket)
-- **Path**: Your configured `WSPATH` (e.g., `/vless-ws`)
-- **Host / SNI**: `<your-service-name>.onrender.com`
-- **TLS / Security**: `TLS` enabled
-- **Flow**: Leave blank / none
+- **𝗣𝗿𝗼𝘁𝗼𝗰𝗼𝗹**: `VLESS`
+- **𝗔𝗱𝗱𝗿𝗲𝘀𝘀 (𝗦𝗲𝗿𝘃𝗲𝗿 / 𝗛𝗼𝘀𝘁)**: `<your-service-name>.onrender.com`
+- **𝗣𝗼𝗿𝘁**: `443`
+- **𝗨𝘀𝗲𝗿 𝗜𝗗 / 𝗨𝗨𝗜𝗗**: 𝗬𝗼𝘂𝗿 𝗰𝗼𝗻𝗳𝗶𝗴𝘂𝗿𝗲𝗱 `UAID`
+- **𝗘𝗻𝗰𝗿𝘆𝗽𝘁𝗶𝗼𝗻**: `none`
+- **𝗧𝗿𝗮𝗻𝘀𝗽𝗼𝗿𝘁 / 𝗡𝗲𝘁𝘄𝗼𝗿𝗸**: `ws` (𝗪𝗲𝗯𝗦𝗼𝗰𝗸𝗲𝘁)
+- **𝗣𝗮𝘁𝗵**: 𝗬𝗼𝘂𝗿 𝗰𝗼𝗻𝗳𝗶𝗴𝘂𝗿𝗲𝗱 `WCPATH` (𝗲.𝗴., `/vws`)
+- **𝗛𝗼𝘀𝘁 / 𝗦𝗡𝗜**: `<your-service-name>.onrender.com`
+- **𝗧𝗟𝗦 / 𝗦𝗲𝗰𝘂𝗿𝗶𝘁𝘆**: `TLS` 𝗲𝗻𝗮𝗯𝗹𝗲𝗱
+- **𝗙𝗹𝗼𝘄**: 𝗟𝗲𝗮𝘃𝗲 𝗯𝗹𝗮𝗻𝗸 / 𝗻𝗼𝗻𝗲
 
 ---
 
-### Configuration by Client App
+### 𝗖𝗼𝗻𝗳𝗶𝗴𝘂𝗿𝗮𝘁𝗶𝗼𝗻 𝗯𝘆 𝗖𝗹𝗶𝗲𝗻𝘁 𝗔𝗽𝗽
 
-#### A. v2rayN (Windows)
-1. Open v2rayN &rarr; **Servers** &rarr; **Add VLESS Server**.
-2. **Address**: `<your-service-name>.onrender.com`
-3. **Port**: `443`
-4. **User ID (id)**: `<YOUR_UUID>`
-5. **Encryption**: `none`, **Network**: `ws`
-6. Under **Transport Settings (ws)**:
-   - **path**: `/vless-ws` (or your custom path)
-   - **Host**: `<your-service-name>.onrender.com`
-7. Under **TLS**:
-   - **streamSecurity**: `tls`
-   - **SNI**: `<your-service-name>.onrender.com`
-8. Save and connect.
+#### 𝗔. 𝘃2𝗿𝗮𝘆𝗡 (𝗪𝗶𝗻𝗱𝗼𝘄𝘀)
+1. 𝗢𝗽𝗲𝗻 𝘃2𝗿𝗮𝘆𝗡 &𝗿𝗮𝗿𝗿; **𝗦𝗲𝗿𝘃𝗲𝗿𝘀** &𝗿𝗮𝗿𝗿; **𝗔𝗱𝗱 𝗩𝗟𝗘𝗦𝗦 𝗦𝗲𝗿𝘃𝗲𝗿**.
+2. **𝗔𝗱𝗱𝗿𝗲𝘀𝘀**: `<your-service-name>.onrender.com`
+3. **𝗣𝗼𝗿𝘁**: `443`
+4. **𝗨𝘀𝗲𝗿 𝗜𝗗 (𝗶𝗱)**: `<YOUR_UUID>`
+5. **𝗘𝗻𝗰𝗿𝘆𝗽𝘁𝗶𝗼𝗻**: `none`, **𝗡𝗲𝘁𝘄𝗼𝗿𝗸**: `ws`
+6. 𝗨𝗻𝗱𝗲𝗿 **𝗧𝗿𝗮𝗻𝘀𝗽𝗼𝗿𝘁 𝗦𝗲𝘁𝘁𝗶𝗻𝗴𝘀 (𝘄𝘀)**:
+   - **𝗽𝗮𝘁𝗵**: `/vws` (𝗼𝗿 𝘆𝗼𝘂𝗿 𝗰𝘂𝘀𝘁𝗼𝗺 𝗽𝗮𝘁𝗵)
+   - **𝗛𝗼𝘀𝘁**: `<your-service-name>.onrender.com`
+7. 𝗨𝗻𝗱𝗲𝗿 **𝗧𝗟𝗦**:
+   - **𝘀𝘁𝗿𝗲𝗮𝗺𝗦𝗲𝗰𝘂𝗿𝗶𝘁𝘆**: `tls`
+   - **𝗦𝗡𝗜**: `<your-service-name>.onrender.com`
+8. 𝗦𝗮𝘃𝗲 𝗮𝗻𝗱 𝗰𝗼𝗻𝗻𝗲𝗰𝘁.
 
-#### B. NekoBox (Android / Windows)
-1. Tap **+** &rarr; **Type**: **VLESS**.
-2. **Server**: `<your-service-name>.onrender.com`, **Port**: `443`.
-3. **UUID**: `<YOUR_UUID>`.
-4. Under **Network**:
-   - **Network**: `WebSocket`
-   - **Path**: `/vless-ws`
-   - **Host**: `<your-service-name>.onrender.com`
-5. Under **Security**:
-   - **Security**: `TLS`
-   - **SNI**: `<your-service-name>.onrender.com`
-6. Save and connect.
+#### 𝗕. 𝗡𝗲𝗸𝗼𝗕𝗼𝘅 (𝗔𝗻𝗱𝗿𝗼𝗶𝗱 / 𝗪𝗶𝗻𝗱𝗼𝘄𝘀)
+1. 𝗧𝗮𝗽 **+** &𝗿𝗮𝗿𝗿; **𝗧𝘆𝗽𝗲**: **𝗩𝗟𝗘𝗦𝗦**.
+2. **𝗦𝗲𝗿𝘃𝗲𝗿**: `<your-service-name>.onrender.com`, **𝗣𝗼𝗿𝘁**: `443`.
+3. **𝗨𝗨𝗜𝗗**: `<YOUR_UUID>`.
+4. 𝗨𝗻𝗱𝗲𝗿 **𝗡𝗲𝘁𝘄𝗼𝗿𝗸**:
+   - **𝗡𝗲𝘁𝘄𝗼𝗿𝗸**: `WebSocket`
+   - **𝗣𝗮𝘁𝗵**: `/vws`
+   - **𝗛𝗼𝘀𝘁**: `<your-service-name>.onrender.com`
+5. 𝗨𝗻𝗱𝗲𝗿 **𝗦𝗲𝗰𝘂𝗿𝗶𝘁𝘆**:
+   - **𝗦𝗲𝗰𝘂𝗿𝗶𝘁𝘆**: `TLS`
+   - **𝗦𝗡𝗜**: `<your-service-name>.onrender.com`
+6. 𝗦𝗮𝘃𝗲 𝗮𝗻𝗱 𝗰𝗼𝗻𝗻𝗲𝗰𝘁.
 
-#### C. Quick Import Link (URI)
+#### 𝗖. 𝗤𝘂𝗶𝗰𝗸 𝗜𝗺𝗽𝗼𝗿𝘁 𝗟𝗶𝗻𝗸 (𝗨𝗥𝗜)
 
 ```text
-vless://YOUR_UUID@YOUR_SERVICE_NAME.onrender.com:443?encryption=none&security=tls&sni=YOUR_SERVICE_NAME.onrender.com&type=ws&host=YOUR_SERVICE_NAME.onrender.com&path=%2Fvless-ws#Render-VLESS
+vless://YOUR_UUID@YOUR_SERVICE_NAME.onrender.com:443?encryption=none&security=tls&sni=YOUR_SERVICE_NAME.onrender.com&type=ws&host=YOUR_SERVICE_NAME.onrender.com&path=%2Fvws#Render-VLESS
 ```
 
 ---
 
-## License
+## 𝗟𝗶𝗰𝗲𝗻𝘀𝗲
 
-This project is licensed under the [MIT License](LICENSE).
+𝗧𝗵𝗶𝘀 𝗽𝗿𝗼𝗷𝗲𝗰𝘁 𝗶𝘀 𝗹𝗶𝗰𝗲𝗻𝘀𝗲𝗱 𝘂𝗻𝗱𝗲𝗿 𝘁𝗵𝗲 [𝗠𝗜𝗧 𝗟𝗶𝗰𝗲𝗻𝘀𝗲](LICENSE).
